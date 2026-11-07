@@ -1,0 +1,51 @@
+/* ===================================================================
+   AJUSTES PARA CELULAR
+   Se carga al final para ganar a styles.css, tema-nuevo.css y
+   combinada.css. Solo actúa en pantallas angostas.
+   =================================================================== */
+
+@media (max-width: 640px) {
+  /* Margen lateral de 16 px y menos cajas anidadas con relleno */
+  .container { padding-left: 16px; padding-right: 16px; }
+  .footing-suite-box { margin-top: 1.25rem; }
+  .footing-panel { padding: 0.75rem; }
+  .footing-panel .calc-grid { gap: 1rem; }
+  .form-block { padding: 1rem; }
+  .calc-results--footing { padding: 1.1rem 1rem 1rem; }
+  .calc-results--footing .results-header { flex-wrap: wrap; gap: 0.25rem 0.75rem; }
+
+  /* Campos a 16 px: así el iPhone no hace zoom al tocarlos */
+  .form-input, .form-select, input, select, textarea { font-size: 16px; }
+  .cmb-loads .form-input { font-size: 15px; padding: 0.45rem 0.35rem; }
+
+  /* Croquis: ocupa todo el ancho y conserva su proporción */
+  .blueprint-card { padding: 0.75rem; }
+  .blueprint-head { flex-wrap: wrap; gap: 0.25rem 0.75rem; }
+  .blueprint-svg { max-width: none; height: auto; aspect-ratio: 420 / 360; }
+  .blueprint-svg > svg { display: block; width: 100%; height: 100%; }
+
+  /* Botones de exportación: uno por fila, cómodos al dedo */
+  .footing-export .btn, .footing-export button { flex: 1 1 100%; justify-content: center; min-height: 44px; }
+
+  /* Ventanas de memoria PDF y tabla resumen: pantalla completa */
+  .footing-pdf-back { padding: 0; }
+  .footing-pdf-panel { width: 100%; height: 100%; height: 100dvh; border-radius: 0; }
+  .footing-pdf-bar { padding: 0.5rem 0.75rem; }
+  .footing-summary-body { padding: 0.5rem; -webkit-overflow-scrolling: touch; }
+  .fs-table { font-size: 0.74rem; }
+  .fs-table th, .fs-table td { padding: 2px 4px; }
+  .fs-table tbody th { width: auto; }
+  .fs-val { min-width: 64px; }
+  .fs-uni { width: auto; }
+
+  /* Zapata combinada: memoria de cálculo más compacta */
+  .cmb-memo > summary { padding: 0.85rem 1rem; }
+  #cmb-memo-body { padding: 0 0.75rem 1rem; }
+
+  /* Calculadoras rápidas: la rejilla no debe salirse de la tarjeta */
+  .calc-body { padding: 1rem; }
+  .calc-grid { grid-template-columns: minmax(0, 1fr); }
+  .calc-form, .calc-results { min-width: 0; }
+  .calc-nav { flex-wrap: wrap; }
+  .calc-nav-btn { flex: 1 1 50%; padding: 0.8rem 0.5rem; font-size: 0.88rem; }
+}
