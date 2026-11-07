@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ing. Kevin | Ingeniería Civil Integral & Recursos Técnicos</title>
+  <meta name="description" content="Portafolio profesional y recursos técnicos gratuitos de ingeniería civil: estructuras, supervisión de obra, vías, hidráulica y herramientas interactivas.">
+  <meta name="keywords" content="Ingeniero Civil, Portafolio, CV, Recursos Gratuitos, Predimensionamiento, Dosificación Concreto, Supervisión de Obra, BIM">
+  
+  <!-- Tipografía Google Fonts (Inter + JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =================================================================
+       BARRA DE NAVEGACIÓN
+       ================================================================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="nav-brand">
+        <div class="brand-icon">IK</div>
+        <div>
+          <span>Ing. Kevin</span>
+          <span class="nav-tagline">Ingeniería Civil Integral</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li>
+            <a href="herramientas.html" class="nav-btn-tools" title="Abrir Suite de Herramientas de Ingeniería Civil">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+              HERRAMIENTAS
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Selector Modo Oscuro/Claro -->
+        <button id="theme-toggle" class="theme-toggle" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+          <span id="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Botón Menú Móvil -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Abrir menú">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================================================
+       HERO SECTION (Inicio)
+       ================================================================= -->
+  <section id="inicio" class="section hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span>Disponible para proyectos, consultoría & supervisión</span>
+        </div>
+
+        <h1 class="hero-title">
+          Ingeniería Civil con rigor técnico,
+          <span>precisión y visión integral.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Especialista en proyectos multidisciplinarios: diseño estructural, supervisión de obras civiles, infraestructura vial y gestión técnica. Comparto herramientas y recursos gratuitos para la comunidad ingenieril.
+        </p>
+
+        <div class="hero-cta">
+          <a href="herramientas.html" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            Herramientas & Recursos Gratuitos
+          </a>
+          <a href="#sobre-mi" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Ver Trayectoria & CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value">+5 Años</div>
+            <div class="stat-label">Experiencia en proyectos civiles</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Rigor y cumplimiento normativo</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Gratis</div>
+            <div class="stat-label">Calculadoras y plantillas técnicas</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ficha Ejecutiva del Perfil -->
+      <div class="hero-card">
+        <div class="profile-preview">
+          <div class="profile-avatar">
+            IK
+          </div>
+          <div class="profile-info">
+            <h4>Ing. Kevin</h4>
+            <p>Ingeniero Civil Colegiado</p>
+            <div class="profile-meta">Consultoría • Residencia • Diseño Estructural</div>
+          </div>
+        </div>
+
+        <div class="card-metrics">
+          <div class="metric-row">
+            <span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+              Enfoque
+            </span>
+            <span>Multidisciplinario</span>
+          </div>
+
+          <div class="metric-row">
+            <span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              Software Principal
+            </span>
+            <span>AutoCAD, Revit, ETABS, S10</span>
+          </div>
+
+          <div class="metric-row">
+            <span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Metodología
+            </span>
+            <span>BIM / PMI / Lean Construction</span>
+          </div>
+
+          <div class="metric-row">
+            <span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Disponibilidad
+            </span>
+            <span>Nacional / Remoto</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem; text-align: center;">
+          <a href="#contacto" class="btn btn-outline btn-sm" style="width: 100%;">
+            Solicitar Evaluación de Proyecto
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECCIÓN: SOBRE MÍ & CV INTERACTIVO
+       ================================================================= -->
+  <section id="sobre-mi" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Perfil Profesional</span>
+        <h2 class="section-title">Sobre Mí & Resumen Curricular</h2>
+        <p class="section-description">
+          Comprometido con la optimización de recursos, la seguridad estructural y la gestión técnica eficaz en todas las fases del ciclo constructivo.
+        </p>
+      </div>
+
+      <div class="cv-grid">
+        <!-- Barra Lateral del CV: Competencias, Software y Descarga -->
+        <div class="cv-sidebar">
+          <div class="cv-sidebar-block">
+            <h4 class="cv-block-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              Competencias de Software
+            </h4>
+            <div class="skills-tags">
+              <span class="skill-tag featured">Revit BIM</span>
+              <span class="skill-tag featured">ETABS & SAP2000</span>
+              <span class="skill-tag featured">AutoCAD Civil 3D</span>
+              <span class="skill-tag">AutoCAD 2D/3D</span>
+              <span class="skill-tag">S10 Costos y Presupuestos</span>
+              <span class="skill-tag">MS Project</span>
+              <span class="skill-tag">Excel Avanzado / Macros</span>
+              <span class="skill-tag">Hcanales & WaterCAD</span>
+            </div>
+          </div>
+
+          <div class="cv-sidebar-block">
+            <h4 class="cv-block-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              Normativas Técnicas
+            </h4>
+            <div class="skills-tags">
+              <span class="skill-tag">ACI 318 (Concreto Armado)</span>
+              <span class="skill-tag">Norma E.030 Sismorresistente</span>
+              <span class="skill-tag">Norma E.060 / E.050 Suelos</span>
+              <span class="skill-tag">Manual de Carreteras MTC / AASHTO</span>
+              <span class="skill-tag">OSHA / Seguridad en Obra</span>
+            </div>
+          </div>
+
+          <div class="cv-sidebar-block">
+            <h4 class="cv-block-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              Educación & Acreditación
+            </h4>
+            <p style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.2rem;">
+              Título Profesional en Ingeniería Civil
+            </p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+              Colegiado y Habilitado para el ejercicio profesional.
+            </p>
+          </div>
+
+          <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+            <a href="assets/docs/CV_Ing_Kevin.pdf" download class="btn btn-primary" style="width: 100%; justify-content: center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Descargar CV Completo (PDF)
+            </a>
+            <p style="font-size: 0.75rem; text-align: center; color: var(--text-muted); margin-top: 0.5rem;">
+              Actualizado • Documento Oficial
+            </p>
+          </div>
+        </div>
+
+        <!-- Línea de Tiempo de Trayectoria -->
+        <div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.75rem; color: var(--text-primary);">
+            Trayectoria & Experiencia Profesional
+          </h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-period">2023 - Presente</div>
+              <h4 class="timeline-role">Ingeniero Consultor & Proyectista Estructural</h4>
+              <div class="timeline-company">Consultoría Independiente & Proyectos Privados</div>
+              <p class="timeline-desc">
+                Desarrollo de expedientes técnicos integrales, análisis y diseño sismorresistente de edificaciones, coordinación multidisciplinaria mediante metodología BIM y elaboración de presupuestos detallados con análisis de precios unitarios.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-period">2021 - 2023</div>
+              <h4 class="timeline-role">Residente / Asistente de Supervisión de Obra</h4>
+              <div class="timeline-company">Proyectos de Infraestructura Urbana & Edificaciones</div>
+              <p class="timeline-desc">
+                Control de calidad de materiales en obra (ensayos de probetas de concreto, densidad de campo, asentamiento slump), supervisión de vaciados de elementos estructurales, gestión del cuaderno de obra y control de valorizaciones mensuales.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-period">2019 - 2021</div>
+              <h4 class="timeline-role">Especialista en Metrados, Costos y Vías</h4>
+              <div class="timeline-company">Desarrollo de Expedientes Técnicos & Obras Viales</div>
+              <p class="timeline-desc">
+                Modelado geométrico con Civil 3D para cálculo de movimiento de tierras, diseño de perfiles longitudinales y secciones transversales, elaboración de metrados para concreto y acero, y formulación de cronogramas con MS Project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECCIÓN: ESPECIALIDADES MULTIDISCIPLINARIAS
+       ================================================================= -->
+  <section id="especialidades" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Capacidades Técnicas</span>
+        <h2 class="section-title">Especialidades de Ingeniería</h2>
+        <p class="section-description">
+          Servicios integrales diseñados para garantizar solidez estructural, rentabilidad de construcción y cumplimiento de plazos.
+        </p>
+      </div>
+
+      <div class="specialties-grid">
+        <!-- 1. Estructuras -->
+        <div class="specialty-card">
+          <div class="specialty-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 21h18"></path>
+              <path d="M5 21V7l8-4 6 3v15"></path>
+              <path d="M9 10a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V7"></path>
+            </svg>
+          </div>
+          <h3 class="specialty-title">Estructuras & Análisis Sísmico</h3>
+          <p class="specialty-desc">
+            Cálculo y diseño de edificaciones de concreto armado y acero estructural. Modelado computacional con ETABS y SAP2000 bajo normativas internacionales y nacionales.
+          </p>
+          <ul class="specialty-deliverables">
+            <li>Memoria de cálculo estructural detallada</li>
+            <li>Planos de encofrados, vigas, columnas y cimentaciones</li>
+            <li>Evaluación y reforzamiento de estructuras existentes</li>
+          </ul>
+        </div>
+
+        <!-- 2. Supervisión de Obras -->
+        <div class="specialty-card">
+          <div class="specialty-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="specialty-title">Supervisión & Residencia de Obra</h3>
+          <p class="specialty-desc">
+            Control riguroso de calidad de ejecución en campo, verificación de especificaciones técnicas, protocolos de seguridad, gestión de subcontratistas y valorizaciones.
+          </p>
+          <ul class="specialty-deliverables">
+            <li>Control de pruebas de concreto y mecánica de suelos</li>
+            <li>Gestión de cuaderno de obra digital/físico</li>
+            <li>Valorizaciones y cronogramas de avance valorizado</li>
+          </ul>
+        </div>
+
+        <!-- 3. Vías y Pavimentos -->
+        <div class="specialty-card">
+          <div class="specialty-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+          </div>
+          <h3 class="specialty-title">Infraestructura Vial & Pavimentos</h3>
+          <p class="specialty-desc">
+            Diseño geométrico de carreteras y vías urbanas con AutoCAD Civil 3D. Cálculo de secciones típicas, rasantes, curvas de nivel y dimensionamiento de paquetes estructurales de pavimento rígido y flexible.
+          </p>
+          <ul class="specialty-deliverables">
+            <li>Diseño geométrico en planta, perfil y secciones</li>
+            <li>Cálculo de movimiento de tierras (corte y relleno)</li>
+            <li>Diseño de drenaje superficial y cunetas viales</li>
+          </ul>
+        </div>
+
+        <!-- 4. Hidráulica & Saneamiento -->
+        <div class="specialty-card">
+          <div class="specialty-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+          </div>
+          <h3 class="specialty-title">Obras Hidráulicas & Saneamiento</h3>
+          <p class="specialty-desc">
+            Modelado hidráulico de redes de distribución de agua potable, colectores de alcantarillado sanitario, canales de riego y obras de arte (captaciones, desarenadores y reservorios).
+          </p>
+          <ul class="specialty-deliverables">
+            <li>Cálculo hidráulico de canales y tuberías a presión</li>
+            <li>Planos de redes de agua y desagüe con perfiles</li>
+            <li>Diseño de obras de captación y almacenamiento</li>
+          </ul>
+        </div>
+
+        <!-- 5. Metrados, Costos y Presupuestos -->
+        <div class="specialty-card">
+          <div class="specialty-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3 class="specialty-title">Metrados, Costos & Presupuestos</h3>
+          <p class="specialty-desc">
+            Elaboración de presupuestos minuciosos con S10 Costos y Presupuestos. Análisis de precios unitarios (APU), desagregado de insumos, fórmulas polinómicas y programación de obra con MS Project.
+          </p>
+          <ul class="specialty-deliverables">
+            <li>Planillas de metrados respaldadas en planos</li>
+            <li>Análisis de precios unitarios actualizados</li>
+            <li>Cronograma de adquisición de materiales y desembolsos</li>
+          </ul>
+        </div>
+
+        <!-- 6. Modelado BIM & Coordinación Digital -->
+        <div class="specialty-card">
+          <div class="specialty-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="specialty-title">Modelado BIM & Coordinación</h3>
+          <p class="specialty-desc">
+            Integración de modelos tridimensionales paramétricos con Autodesk Revit. Detección temprana de interferencias entre arquitectura, estructuras e instalaciones electromecánicas/sanitarias.
+          </p>
+          <ul class="specialty-deliverables">
+            <li>Modelos BIM 3D con nivel de detalle (LOD 300 / 350)</li>
+            <li>Reportes de detección de interferencias (Clash Detection)</li>
+            <li>Extracción directa de cuantías y planos ejecutivos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECCIÓN: PORTAFOLIO DE PROYECTOS
+       ================================================================= -->
+  <section id="proyectos" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experiencia en Campo</span>
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-description">
+          Muestra de obras y consultorías realizadas con altos estándares de calidad, seguridad y eficiencia técnica.
+        </p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Todos los Proyectos</button>
+        <button class="filter-btn" data-filter="estructuras">Estructuras</button>
+        <button class="filter-btn" data-filter="vias">Vías y Pavimentos</button>
+        <button class="filter-btn" data-filter="supervision">Supervisión de Obra</button>
+        <button class="filter-btn" data-filter="hidraulica">Hidráulica y Saneamiento</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card" data-category="estructuras">
+          <div class="project-thumb">
+            <span class="project-badge">Estructuras & BIM</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+              <line x1="9" y1="22" x2="9" y2="2"></line>
+              <line x1="15" y1="22" x2="15" y2="2"></line>
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="11" x2="20" y2="11"></line>
+              <line x1="4" y1="16" x2="20" y2="16"></line>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-top">
+              <span>EDIFICACIÓN RESIDENCIAL</span>
+              <span>8 PISOS + SEMISÓTANO</span>
+            </div>
+            <h3 class="project-title">Edificio Multifamiliar "Torre Horizonte"</h3>
+            <p class="project-desc">
+              Cálculo estructural sismorresistente en sistema dual de pórticos y muros de concreto armado. Modelado BIM para compatibilización con instalaciones hidrosanitarias.
+            </p>
+            <div class="project-specs">
+              <div class="spec-cell">
+                <span>Área Construida:</span>
+                <span>2,450 m²</span>
+              </div>
+              <div class="spec-cell">
+                <span>Software:</span>
+                <span>ETABS, Revit, SAFE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project-card" data-category="vias">
+          <div class="project-thumb">
+            <span class="project-badge">Infraestructura Vial</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 19L9 5"></path>
+              <path d="M20 19L15 5"></path>
+              <line x1="12" y1="6" x2="12" y2="9"></line>
+              <line x1="12" y1="13" x2="12" y2="16"></line>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-top">
+              <span>OBRAS VIALES</span>
+              <span>PAVIMENTACIÓN</span>
+            </div>
+            <h3 class="project-title">Mejoramiento de Transitabilidad y Vía Colectora</h3>
+            <p class="project-desc">
+              Diseño geométrico de 4.8 km de calzada con pavimento rígido, cálculo de bermas, señalización horizontal/vertical y sistema integral de drenaje de aguas de lluvia.
+            </p>
+            <div class="project-specs">
+              <div class="spec-cell">
+                <span>Longitud:</span>
+                <span>4.8 Kilómetros</span>
+              </div>
+              <div class="spec-cell">
+                <span>Software:</span>
+                <span>Civil 3D, Hcanales</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card" data-category="supervision">
+          <div class="project-thumb">
+            <span class="project-badge">Supervisión</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <polyline points="17 11 19 13 23 9"></polyline>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-top">
+              <span>SUPERVISIÓN TÉCNICA</span>
+              <span>CONTROL DE CALIDAD</span>
+            </div>
+            <h3 class="project-title">Supervisión de Centro Educativo Integrado</h3>
+            <p class="project-desc">
+              Control de calidad de 3 módulos de aulas, losas deportivas y cerco perimétrico. Ensayo y rotura de probetas de concreto f'c=210 kg/cm² y control de cronograma de obra.
+            </p>
+            <div class="project-specs">
+              <div class="spec-cell">
+                <span>Plazo de Ejecución:</span>
+                <span>180 Días Calendario</span>
+              </div>
+              <div class="spec-cell">
+                <span>Alcance:</span>
+                <span>Calidad y Valorizaciones</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="project-card" data-category="hidraulica">
+          <div class="project-thumb">
+            <span class="project-badge">Saneamiento Básico</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-top">
+              <span>HIDRÁULICA Y SANEAMIENTO</span>
+              <span>RURAL / URBANO</span>
+            </div>
+            <h3 class="project-title">Instalación del Sistema de Agua y Alcantarillado</h3>
+            <p class="project-desc">
+              Diseño de captación de ladera, línea de conducción por gravedad de 3.2 km, reservorio apoyado de 50 m³ y red de distribución con conexiones domiciliarias.
+            </p>
+            <div class="project-specs">
+              <div class="spec-cell">
+                <span>Capacidad Reservorio:</span>
+                <span>50 m³ de Concreto</span>
+              </div>
+              <div class="spec-cell">
+                <span>Software:</span>
+                <span>WaterCAD, AutoCAD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="project-card" data-category="estructuras">
+          <div class="project-thumb">
+            <span class="project-badge">Estructuras</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+              <line x1="8" y1="2" x2="8" y2="18"></line>
+              <line x1="16" y1="6" x2="16" y2="22"></line>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-top">
+              <span>OBRAS DE ARTE VIAL</span>
+              <span>PUENTES</span>
+            </div>
+            <h3 class="project-title">Diseño de Puente Viga-Losa de Concreto Armado</h3>
+            <p class="project-desc">
+              Cálculo estructural de superestructura e infraestructura de puente con luz de 22 metros, estribos de gravedad y análisis de socavación para crecidas extraordinarias.
+            </p>
+            <div class="project-specs">
+              <div class="spec-cell">
+                <span>Luz Libre:</span>
+                <span>22.00 Metros</span>
+              </div>
+              <div class="spec-cell">
+                <span>Normativa:</span>
+                <span>AASHTO LRFD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="project-card" data-category="supervision">
+          <div class="project-thumb">
+            <span class="project-badge">Costos & Metrados</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+              <line x1="1" y1="10" x2="23" y2="10"></line>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-meta-top">
+              <span>EXPEDIENTE TÉCNICO</span>
+              <span>PRESUPUESTOS</span>
+            </div>
+            <h3 class="project-title">Expediente Técnico Complejo Deportivo Municipal</h3>
+            <p class="project-desc">
+              Planificación, metrados integrales, análisis de costos unitarios de más de 180 partidas constructivas, plan de manejo ambiental y cronograma valorizado.
+            </p>
+            <div class="project-specs">
+              <div class="spec-cell">
+                <span>Presupuesto Obra:</span>
+                <span>Expediente Integral</span>
+              </div>
+              <div class="spec-cell">
+                <span>Software:</span>
+                <span>S10, MS Project, Excel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECCIÓN: HUB DE RECURSOS GRATUITOS & CALCULADORAS
+       ================================================================= -->
+  <section id="recursos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Aporte a la Comunidad Técnica</span>
+        <h2 class="section-title">Herramientas & Recursos Gratuitos</h2>
+        <p class="section-description">
+          Utiliza calculadoras interactivas en vivo para tus cálculos preliminares, nuestro nuevo <strong>Programa de Zapatas Aisladas</strong> o descarga plantillas técnicas listas para optimizar tu trabajo en oficina y obra.
+        </p>
+        <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="herramientas.html#modulo-zapatas" class="nav-btn-tools" style="font-size: 0.92rem; padding: 0.65rem 1.4rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+            </svg>
+            Abrir Programa de Zapatas (Cálculo & Acero) →
+          </a>
+        </div>
+      </div>
+
+      <!-- Selector de Tipo de Recurso -->
+      <div class="resources-tabs">
+        <button class="tab-btn active" data-view="view-calculators">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01"></path>
+            <path d="M12 10h.01"></path>
+            <path d="M8 10h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M8 14h.01"></path>
+            <path d="M12 18h.01"></path>
+            <path d="M8 18h.01"></path>
+          </svg>
+          Calculadoras de Ingeniería en Vivo
+        </button>
+        <button class="tab-btn" data-view="view-downloads">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Plantillas & Guías Descargables
+        </button>
+      </div>
+
+      <!-- VISTA 1: CALCULADORAS INTERACTIVAS -->
+      <div id="view-calculators" class="resource-view active">
+        <div class="calculator-box">
+          <!-- Pestañas internas de calculadoras -->
+          <div class="calc-selector">
+            <button class="calc-nav-btn active" data-target="calc-beam">
+              1. Predimensionamiento de Vigas
+            </button>
+            <button class="calc-nav-btn" data-target="calc-concrete">
+              2. Dosificación de Concreto en Obra
+            </button>
+            <button class="calc-nav-btn" data-target="calc-slope">
+              3. Pendientes y Desniveles
+            </button>
+          </div>
+
+          <div class="calc-body">
+            <!-- CALCULADORA 1: VIGAS -->
+            <div id="calc-beam" class="calc-panel active">
+              <div class="calc-grid">
+                <div class="calc-form">
+                  <div class="form-group">
+                    <label class="form-label" for="beam-length">
+                      Luz Libre del Tramo (L)
+                      <span class="form-hint">En metros (m)</span>
+                    </label>
+                    <input type="number" id="beam-length" class="form-input" value="5.5" step="0.1" min="1" max="25">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="beam-type">
+                      Tipo de Carga / Uso de la Estructura
+                    </label>
+                    <select id="beam-type" class="form-select">
+                      <option value="12" selected>Vivienda / Oficinas (h ≈ L / 12)</option>
+                      <option value="10">Comercial / Carga Pesada (h ≈ L / 10)</option>
+                      <option value="14">Viga Secundaria / Poca Carga (h ≈ L / 14)</option>
+                      <option value="5">Voladizo / Cantilever (h ≈ L / 5)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="beam-width">
+                      Ancho Propuesto de Viga (b)
+                      <span class="form-hint">Mínimo 25 cm para zona sísmica</span>
+                    </label>
+                    <input type="number" id="beam-width" class="form-input" value="30" step="5" min="20" max="100">
+                  </div>
+                </div>
+
+                <div class="calc-results">
+                  <div>
+                    <div class="results-header">Dimensiones Sugeridas</div>
+                    <div class="result-main">
+                      <div class="result-number" id="res-beam-h">50 cm</div>
+                      <div class="result-unit">Peralte total recomendado (h)</div>
+                    </div>
+
+                    <div class="result-breakdown">
+                      <div class="breakdown-row">
+                        <span>Base de la viga (b):</span>
+                        <span id="res-beam-b">30 cm</span>
+                      </div>
+                      <div class="breakdown-row">
+                        <span>Peralte efectivo aprox. (d):</span>
+                        <span id="res-beam-d">45 cm</span>
+                      </div>
+                      <div class="breakdown-row">
+                        <span>Rango sugerido para base:</span>
+                        <span id="res-beam-suggested-b">25 a 30 cm</span>
+                      </div>
+                      <div class="breakdown-row">
+                        <span>Relación de aspecto (b:h):</span>
+                        <span id="res-beam-ratio">1 : 1.67</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="calc-disclaimer">
+                    * Nota: Cálculo para estimación preliminar de dimensiones constructivas según criterios estándar de control de deflexión (ACI 318 / NTE E.060). Todo proyecto definitivo requiere verificación por flexión, cortante y sismo.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CALCULADORA 2: DOSIFICACIÓN DE CONCRETO -->
+            <div id="calc-concrete" class="calc-panel">
+              <div class="calc-grid">
+                <div class="calc-form">
+                  <div class="form-group">
+                    <label class="form-label" for="concrete-fc">
+                      Resistencia a la Compresión (f'c)
+                    </label>
+                    <select id="concrete-fc" class="form-select">
+                      <option value="140">140 kg/cm² (Solados, veredas, falsos pisos)</option>
+                      <option value="175">175 kg/cm² (Cimientos corridos, sobrecimientos)</option>
+                      <option value="210" selected>210 kg/cm² (Vigas, columnas, losas estándar)</option>
+                      <option value="280">280 kg/cm² (Estructuras de alta resistencia / puentes)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="concrete-vol">
+                      Volumen a Vaciar
+                      <span class="form-hint">En metros cúbicos (m³)</span>
+                    </label>
+                    <input type="number" id="concrete-vol" class="form-input" value="1.0" step="0.5" min="0.1">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="concrete-waste">
+                      Desperdicio Estimado en Obra (%)
+                    </label>
+                    <input type="number" id="concrete-waste" class="form-input" value="5" step="1" min="0" max="25">
+                  </div>
+                </div>
+
+                <div class="calc-results">
+                  <div>
+                    <div class="results-header">Materiales Requeridos</div>
+                    <div class="result-main">
+                      <div class="result-number" id="res-concrete-bags">11 bolsas</div>
+                      <div class="result-unit">Cemento Tipo I (42.5 kg)</div>
+                    </div>
+
+                    <div class="result-breakdown">
+                      <div class="breakdown-row">
+                        <span>Arena Gruesa:</span>
+                        <span id="res-concrete-sand">0.55 m³</span>
+                      </div>
+                      <div class="breakdown-row">
+                        <span>Piedra Chancada 1/2":</span>
+                        <span id="res-concrete-gravel">0.56 m³</span>
+                      </div>
+                      <div class="breakdown-row">
+                        <span>Agua estimada:</span>
+                        <span id="res-concrete-water">195 L</span>
+                      </div>
+                      <div class="breakdown-row">
+                        <span>Proporción volumétrica típica:</span>
+                        <span id="res-concrete-ratio">1 : 2 : 2</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="calc-disclaimer">
+                    * Las cantidades reales varían según el contenido de humedad y granulometría de los agregados de tu cantera. Se recomienda realizar diseño de mezclas por método ACI en laboratorio.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CALCULADORA 3: PENDIENTES TOPOGRÁFICAS -->
+            <div id="calc-slope" class="calc-panel">
+              <div class="calc-grid">
+                <div class="calc-form">
+                  <div class="form-group">
+                    <label class="form-label" for="slope-dist">
+                      Distancia Horizontal (D)
+                      <span class="form-hint">En metros (m)</span>
+                    </label>
+                    <input type="number" id="slope-dist" class="form-input" value="100" step="1" min="1">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="slope-z1">
+                      Cota de Inicio (Z1)
+                      <span class="form-hint">En m.s.n.m. o cota relativa</span>
+                    </label>
+                    <input type="number" id="slope-z1" class="form-input" value="100.00" step="0.1">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="slope-z2">
+                      Cota Final (Z2)
+                      <span class="form-hint">En m.s.n.m.</span>
+                    </label>
+                    <input type="number" id="slope-z2" class="form-input" value="104.50" step="0.1">
+                  </div>
+                </div>
+
+                <div class="calc-results">
+                  <div>
+                    <div class="results-header">Resultados Geométricos</div>
+                    <div class="result-main">
+                      <div class="result-number" id="res-slope-percent">4.50%</div>
+                      <div class="result-unit">Pendiente Longitudinal</div>
+                    </div>
+
+                    <div class="result-breakdown">
+                      <div class="breakdown-row">
+                        <span>Desnivel vertical (&Delta;h):</span>
+                        <span id="res-slope-delta">+4.50 m</span>
+                      </div>
+                      <div class="breakdown-row">
+                        <span>Relación de pendiente (H:V):</span>
+                        <span id="res-slope-ratio">1 : 22.2</span>
+                      </div>
+                      <div class="breakdown-row">
+                        <span>Ángulo de inclinación:</span>
+                        <span id="res-slope-angle">2.58°</span>
+                      </div>
+                      <div class="breakdown-row">
+                        <span>Evaluación técnica:</span>
+                        <span id="res-slope-diag" style="color: var(--accent-blue); text-align: right;">Pendiente moderada</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="calc-disclaimer">
+                    * Ideal para verificar rasantes de pavimentos, pendientes mínimas de tuberías de desagüe (sifones/arrastre) y rampas peatonales con accesibilidad universal (máx 8% - 10%).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VISTA 2: PLANTILLAS Y GUÍAS DESCARGABLES -->
+      <div id="view-downloads" class="resource-view">
+        <div class="downloads-grid">
+          <!-- Recurso 1 -->
+          <div class="download-card">
+            <div class="download-top">
+              <span class="file-type-badge badge-excel">EXCEL .XLSX</span>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+            </div>
+            <h3 class="download-title">Plantilla de Metrados de Concreto, Encofrado y Acero</h3>
+            <p class="download-desc">
+              Hoja de cálculo formulada para metrar zapatas, columnas, vigas y losas aligeradas. Incluye resumen automático de pesos de acero por diámetro comercial (3/8", 1/2", 5/8", 3/4").
+            </p>
+            <div class="download-meta">
+              <span>Tamaño: 245 KB</span>
+              <a href="#contacto" class="btn btn-outline btn-sm">Solicitar Archivo</a>
+            </div>
+          </div>
+
+          <!-- Recurso 2 -->
+          <div class="download-card">
+            <div class="download-top">
+              <span class="file-type-badge badge-excel">EXCEL .XLSX</span>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+            </div>
+            <h3 class="download-title">Formato de Control Diario de Cuaderno de Obra</h3>
+            <p class="download-desc">
+              Plantilla estructurada para el registro diario de actividades en campo, control de personal, maquinaria operativa/inoperativa, condiciones climáticas y ocurrencias técnicas.
+            </p>
+            <div class="download-meta">
+              <span>Tamaño: 180 KB</span>
+              <a href="#contacto" class="btn btn-outline btn-sm">Solicitar Archivo</a>
+            </div>
+          </div>
+
+          <!-- Recurso 3 -->
+          <div class="download-card">
+            <div class="download-top">
+              <span class="file-type-badge badge-pdf">PDF TÉCNICO</span>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+            </div>
+            <h3 class="download-title">Checklist de Supervisión en Vaciado de Concreto</h3>
+            <p class="download-desc">
+              Lista de verificación paso a paso previa, durante y posterior al vaciado: verificación de recubrimientos, limpieza de encofrados, vibrado correcto y curado del elemento.
+            </p>
+            <div class="download-meta">
+              <span>Formato: PDF Imprimible</span>
+              <a href="#contacto" class="btn btn-outline btn-sm">Solicitar Archivo</a>
+            </div>
+          </div>
+
+          <!-- Recurso 4 -->
+          <div class="download-card">
+            <div class="download-top">
+              <span class="file-type-badge badge-cad">AUTOCAD .DWG</span>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="download-title">Librería de Detalles Típicos Sismorresistentes</h3>
+            <p class="download-desc">
+              Bloques en AutoCAD con detalles normativos de empalmes en vigas y columnas, distribución de estribos confinados, zunchos y anclajes en nudos viga-columna.
+            </p>
+            <div class="download-meta">
+              <span>Versión: AutoCAD 2018+</span>
+              <a href="#contacto" class="btn btn-outline btn-sm">Solicitar Archivo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECCIÓN: CONTACTO & CONSULTORÍA
+       ================================================================= -->
+  <section id="contacto" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Canales Directos</span>
+        <h2 class="section-title">Iniciemos una Conversación</h2>
+        <p class="section-description">
+          ¿Tienes un proyecto en mente, necesitas consultoría técnica o deseas acceso a los recursos? Escríbeme y responderé a la brevedad.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Tarjetas de Información Directa -->
+        <div class="contact-info-card">
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="method-details">
+              <h5>Correo Electrónico</h5>
+              <p>kevin.ingenieriacivil@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="method-details">
+              <h5>WhatsApp Directo</h5>
+              <p>+51 900 000 000 (Mensajes & Consultas)</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="method-details">
+              <h5>LinkedIn Profesional</h5>
+              <p>linkedin.com/in/ing-kevin-civil</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="method-details">
+              <h5>Ubicación & Cobertura</h5>
+              <p>Disponible para proyectos presenciales y asesoría virtual</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contact-form-card">
+          <form id="contact-form" class="calc-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Nombre y Apellido *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Ej: Arq. Carlos Mendoza / Empresa Constructora" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-email">Correo Electrónico *</label>
+              <input type="email" id="form-email" class="form-input" placeholder="nombre@correo.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-subject">Tipo de Consulta o Proyecto</label>
+              <select id="form-subject" class="form-select">
+                <option value="Diseño y Cálculo Estructural">Diseño y Cálculo Estructural</option>
+                <option value="Supervisión o Residencia de Obra">Supervisión o Residencia de Obra</option>
+                <option value="Expediente Técnico / Metrados / Presupuestos">Expediente Técnico / Metrados / Presupuestos</option>
+                <option value="Modelado BIM / Coordinación">Modelado BIM / Coordinación</option>
+                <option value="Solicitud de Recursos Técnicos">Solicitud de Recursos Técnicos</option>
+                <option value="Otro motivo">Otro motivo</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-message">Detalles del Mensaje o Proyecto *</label>
+              <textarea id="form-message" class="form-input" rows="4" placeholder="Describe brevemente el alcance de la obra, ubicación o dudas técnicas..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Enviar Mensaje Directo
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       FOOTER
+       ================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <p><strong>Ing. Kevin</strong> — Ingeniería Civil Integral & Consultoría</p>
+        <p style="font-size: 0.8rem; margin-top: 0.25rem;">
+          Diseñado con estándares ejecutivos, precisión matemática y código limpio.
+        </p>
+      </div>
+
+      <div>
+        <a href="#inicio" style="color: var(--accent-blue); font-weight: 500;">↑ Volver al inicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/calculators.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

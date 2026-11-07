@@ -1,0 +1,73 @@
+/* ===================================================================
+   ZAPATA COMBINADA - estilos propios del panel (#panel-combined)
+   Usa los tokens de tema-nuevo.css (claro y oscuro).
+   =================================================================== */
+
+/* Tabla de cargas: filas como en la hoja del curso */
+.cmb-loads { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.84rem; }
+.cmb-loads th, .cmb-loads td { padding: 0.25rem 0.2rem; }
+.cmb-loads thead th {
+  font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--text-muted); text-align: left; padding-bottom: 0.4rem;
+}
+.cmb-loads thead th:first-child { width: 31%; }
+.cmb-loads tbody th { text-align: left; font-weight: 600; color: var(--text-primary); white-space: nowrap; }
+.cmb-loads tbody th small { font-weight: 400; color: var(--text-muted); font-size: 0.72rem; }
+.cmb-loads .form-input { width: 100%; min-width: 0; padding: 0.45rem 0.5rem; }
+.cmb-loads__sep th, .cmb-loads__sep td { padding-top: 0.7rem; }
+@media (max-width: 420px) {
+  .cmb-loads thead th:first-child { width: 27%; }
+  .cmb-loads tbody th { white-space: normal; font-size: 0.78rem; }
+}
+
+.cmb-auto-btn { margin-top: 1rem; }
+
+/* Avisos */
+.cmb-avisos {
+  margin: 0 0 0.5rem; padding: 0.7rem 0.9rem; border-radius: var(--radius-sm);
+  border: 1px solid var(--accent-warning); color: var(--accent-warning);
+  font-size: 0.82rem; line-height: 1.45;
+}
+.cmb-avisos p { margin: 0; }
+.cmb-avisos p + p { margin-top: 0.35rem; }
+
+/* SVG del croquis y de los diagramas */
+.cmb-svg { width: 100%; }
+.cmb-svg svg { display: block; width: 100%; height: auto; }
+.cmb-wide { margin-top: 1.5rem; }
+.cmb-svg--plan { max-width: 680px; margin: 0 auto; }
+.cmb-muted { font-size: 0.8rem; color: var(--text-muted); }
+#panel-combined .breakdown-row .cmb-muted { display: block; margin-top: 0.1rem; font-family: var(--font-sans); }
+.cmb-ok { color: var(--accent-success); font-weight: 700; }
+.cmb-bad { color: var(--accent-warning); font-weight: 700; }
+
+/* Memoria de cálculo */
+.cmb-memo {
+  margin-top: 1.25rem; border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+  background: var(--bg-primary);
+}
+.cmb-memo > summary {
+  cursor: pointer; padding: 1rem 1.25rem; list-style-position: inside;
+  font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--text-primary);
+}
+#cmb-memo-body {
+  padding: 0 1.25rem 1.25rem;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 1rem 1.75rem;
+}
+.cmb-step { min-width: 0; }
+.cmb-step--wide { grid-column: 1 / -1; }
+.cmb-step h4 {
+  margin: 0.4rem 0 0.5rem; font-family: var(--font-display); font-weight: 400; font-size: 1.08rem;
+  color: var(--text-primary);
+}
+.cmb-step h5 { margin: 0.7rem 0 0.25rem; font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); }
+.cmb-step p { margin: 0.25rem 0; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45; }
+.cmb-table-wrap { overflow-x: auto; }
+.cmb-tbl { width: 100%; border-collapse: collapse; font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+.cmb-tbl th, .cmb-tbl td { padding: 0.32rem 0.5rem; border-bottom: 1px solid var(--border-subtle); text-align: right; white-space: nowrap; }
+.cmb-tbl th:first-child, .cmb-tbl td:first-child { text-align: left; }
+.cmb-tbl thead th { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); font-weight: 700; }
+.cmb-tbl td.cmb-sym { font-family: var(--font-mono); color: var(--text-primary); }
+.cmb-tbl td.cmb-desc { color: var(--text-muted); white-space: normal; text-align: left; }
+.cmb-tbl tr.cmb-key td { font-weight: 700; color: var(--text-primary); }

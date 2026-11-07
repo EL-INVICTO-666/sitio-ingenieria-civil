@@ -1,0 +1,222 @@
+<!doctype html>
+<!-- data-type: service (plan line 1). Sin fotografías de construcción en la biblioteca de la skill: la imagen
+     de cada sección es el trabajo real (memoria de cálculo en PDF y tabla resumen de la calculadora). -->
+<html lang="es" data-type="service" data-radius="soft" data-buttons="arrow" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ing. Kevin: ingeniero civil en estructuras y obras</title>
+<meta name="description" content="Diseño estructural, supervisión de obra y presupuestos. Calculadoras gratis de zapatas con memoria en PDF según la Norma E.060.">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..700&family=Libre+Franklin:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #e5e1d8; --p-surface: #dad5ca; --p-ink: #2a1d17; --p-muted: #65564c;
+  --p-accent: #456f3a; --p-accent-ink: #ffffff; --p-action: #456f3a; --p-action-ink: #ffffff;
+  --p-inv-bg: #2a1d17; --p-inv-surface: #352822; --p-inv-ink: #e5e1d8; --p-inv-muted: #9e968e;
+  --p-inv-accent: #e5e1d8; --p-inv-accent-ink: #2a1d17; --p-inv-action: #e5e1d8; --p-inv-action-ink: #2a1d17;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-text: "Libre Franklin", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.02em;
+  --display-tracking-xl: -0.026em;
+}
+/* page CSS: solo dentro de una imagen */
+.doc-shot { background: #fff; }
+.doc-shot img { object-position: 50% 0; }
+#proceso .panel { --p-h: 336px; }
+.faq .faq__item h3 { font-family: var(--font-display); font-weight: 400; }
+@media (min-width: 640px) and (max-width: 1023px) { #servicios .frame--fill { height: auto; flex: none; min-height: 0; aspect-ratio: 5 / 2; } }
+@media (min-width: 1024px) and (max-width: 1279px) { #preguntas { --h: 2; } #preguntas .faq__item { padding-block: 40px; } #proceso { --h: 1; } #proceso .grid > .card { grid-column: span 4; } #proceso .panel { --p-h: 220px; } }
+@media (max-width: 639px) { #preguntas { --hm: 2; } #preguntas .faq__item { padding-block: 34px; } }
+@media (min-width: 640px) and (max-width: 1023px) { #proceso { --h: 2; } }
+@media (min-width: 1024px) and (max-width: 1279px) { #servicios { --h: 2; } }
+@media (max-width: 639px) { #servicios { --hm: 2; } #servicios .frame--fill { min-height: 520px; } }
+@media (max-width: 639px) { #proceso { --hm: 2; } #proceso .panel { --p-h: 220px; } }
+</style>
+</head>
+<body>
+<!-- type: service
+     deal: hero split (--has ui), nav nav-split, footer footer-dark, close close-type, rhythm dark-band,
+           buttons arrow, mark dots, palette green-mat-chocolate, pairing source-serif, radius soft
+     plan: hero (memoria PDF, 1) · servicios (services-list + tabla resumen, 1) · herramientas (dark band,
+           split-text-left + memoria PDF, 1) · proceso (steps, 1) · preguntas (faq, 1) · footer.closing (1) -->
+
+<header class="nav nav--split">
+  <div class="wrap nav__bar">
+    <a class="nav__logo" href="#top"><span class="mark" data-mark="dots" aria-hidden="true"></span>Ing. Kevin</a>
+    <nav class="nav__links" aria-label="Principal">
+      <div class="nav__item"><a class="nav__link" href="#servicios">Servicios</a></div>
+      <div class="nav__item"><a class="nav__link" href="herramientas.html">Herramientas</a></div>
+      <div class="nav__item"><a class="nav__link" href="#proceso">Proceso</a></div>
+      <div class="nav__item"><a class="nav__link" href="#preguntas">Preguntas</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="mailto:consultas@ing-kevin.example">Solicitar cotización<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menú"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--split" aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-6">
+        <p class="hero__kicker">10 pasos de la Norma E.060 en cada memoria</p>
+        <h1 id="hero-h">Ingeniero civil en estructuras y obras</h1>
+        <p class="hero__lead">Diseño estructural, supervisión de obra y presupuestos. Calcula tu zapata aislada gratis y descarga la memoria en PDF con fórmulas y valores.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="mailto:consultas@ing-kevin.example">Solicitar cotización<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+          <a class="btn btn--secondary" href="herramientas.html">Abrir calculadoras</a>
+        </div>
+      </div>
+      <div class="hero__media doc-shot span-6 start-7">
+        <img src="assets/img/memoria-datos.webp" alt="Primera página de la memoria de cálculo de una zapata aislada: datos del problema y pasos 1 a 3" width="990" height="1400" fetchpriority="high" data-source="client" data-subject="memoria de cálculo">
+        <div class="ly-float">
+          <div class="ly-float__row"><span class="ly-live">Resultado</span><span>Cumple E.060</span></div>
+          <div class="ly-float__title">Zapata de 5,00 × 3,00 m, hz 55 cm</div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section" id="servicios" aria-labelledby="servicios-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-6">
+          <div class="section-head">
+            <h2 id="servicios-h">Servicios de ingeniería civil. <span class="muted">Seis áreas, del cálculo a la obra.</span></h2>
+          </div>
+          <ul class="rows">
+            <li><span class="rows__name">Estructuras y análisis sísmico</span><p>Cimentaciones, columnas, vigas y losas según E.030 y E.060.</p></li>
+            <li><span class="rows__name">Supervisión y residencia de obra</span><p>Control de calidad, cuaderno de obra y valorizaciones.</p></li>
+            <li><span class="rows__name">Infraestructura vial y pavimentos</span><p>Calles, carreteras y drenaje superficial.</p></li>
+            <li><span class="rows__name">Hidráulica y saneamiento</span><p>Redes de agua, alcantarillado y estructuras hidráulicas.</p></li>
+            <li><span class="rows__name">Metrados y presupuestos</span><p>Metrados, análisis de precios y cronograma de obra.</p></li>
+            <li><span class="rows__name">Modelado BIM</span><p>Modelos 3D y revisión de interferencias entre especialidades.</p></li>
+          </ul>
+        </div>
+        <div class="frame frame--photo frame--fill doc-shot span-6 start-7">
+          <img class="frame__img" src="assets/img/tabla-resumen.webp" alt="Tabla resumen de una zapata aislada con datos en azul y verificaciones en verde" width="720" height="1090" loading="lazy" data-source="client" data-subject="tabla resumen">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ground-inverse" id="herramientas" aria-labelledby="herramientas-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-6">
+          <div class="section-head">
+            <h2 id="herramientas-h">Calculadoras gratis para estructuras</h2>
+          </div>
+          <p class="t-lead">Zapatas aisladas, predimensionado de vigas, dosificación de concreto y pendientes, calculados en tu navegador, sin registro.</p>
+          <ul class="stack-3">
+            <li>Presiones del suelo con sismo en ambos sentidos.</li>
+            <li>Cortante, punzonamiento y acero por flexión.</li>
+            <li>Memoria en PDF con cada fórmula y su valor.</li>
+          </ul>
+          <p><a class="link" href="herramientas.html">Abrir calculadoras</a></p>
+        </div>
+        <div class="frame frame--photo frame--fill doc-shot span-6 start-7">
+          <img class="frame__img" src="assets/img/memoria-flexion.webp" alt="Pasos 7 y 8 de la memoria de cálculo: punzonamiento y refuerzo por flexión" width="990" height="1400" loading="lazy" data-source="client" data-subject="memoria de cálculo, pasos 7 y 8">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="proceso" aria-labelledby="proceso-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="proceso-h">Un proyecto en 3 pasos</h2>
+        <p>Del encargo a la memoria firmada, con cada cálculo a la vista.</p>
+      </div>
+      <div class="grid">
+        <article class="card card--row span-4">
+          <span class="step-num">1</span>
+          <h3>Recibir tus datos</h3>
+          <p>Planos, cargas, estudio de suelos y plazo de la obra.</p>
+          <div class="panel"><img class="frame__img" src="assets/img/paso-datos.webp" alt="Verificación de presiones del suelo en la memoria de cálculo" loading="lazy" data-source="client" data-subject="presiones"></div>
+        </article>
+        <article class="card card--row span-4">
+          <span class="step-num">2</span>
+          <h3>Calcular y verificar</h3>
+          <p>Combinaciones de carga, cortante, punzonamiento y acero.</p>
+          <div class="panel"><img class="frame__img" src="assets/img/paso-calculo.webp" alt="Croquis del acero de una zapata en planta" loading="lazy" data-source="client" data-subject="croquis"></div>
+        </article>
+        <article class="card card--row span-4">
+          <span class="step-num">3</span>
+          <h3>Entregar la memoria</h3>
+          <p>PDF con fórmulas, valores y ficha técnica para el expediente.</p>
+          <div class="panel"><img class="frame__img" src="assets/img/paso-memoria.webp" alt="Ficha técnica con las dimensiones y el armado de la zapata" loading="lazy" data-source="client" data-subject="ficha técnica"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="preguntas" aria-labelledby="preguntas-h">
+    <div class="wrap">
+      <div class="grid fill">
+        <div class="span-6">
+          <div class="section-head">
+            <h2 id="preguntas-h">Preguntas frecuentes</h2>
+            <p>Sobre las calculadoras y los servicios.</p>
+          </div>
+          <p><a class="link" href="mailto:consultas@ing-kevin.example">Escribir al ingeniero</a></p>
+        </div>
+        <div class="faq span-6 start-7">
+          <div class="faq__item"><h3>¿Qué normas usa la calculadora?</h3><p>La E.060 de concreto armado y la E.050 de suelos. El sismo sigue la combinación 1,25(D+L)±E.</p></div>
+          <div class="faq__item"><h3>¿Las calculadoras son gratis?</h3><p>Sí. No piden registro ni pago.</p></div>
+          <div class="faq__item"><h3>¿Puedo usar el resultado en un expediente?</h3><p>Úsalo como verificación. Un ingeniero colegiado debe revisar y firmar el diseño.</p></div>
+          <div class="faq__item"><h3>¿Qué incluye la memoria en PDF?</h3><p>Los 10 pasos con fórmulas y valores, tablas de presiones, ficha técnica y croquis del acero.</p></div>
+          <div class="faq__item"><h3>¿Mis datos salen de mi equipo?</h3><p>No. El cálculo corre en tu navegador; solo el PDF se compila en texlive.net cuando lo pides.</p></div>
+          <div class="faq__item"><h3>¿Aceptas supervisión de obra?</h3><p>Sí: residencia, supervisión y control de calidad. Escríbeme con la ubicación y el plazo.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--dark ground-inverse" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h">Cotiza tu proyecto de ingeniería</h2>
+        <p>Cuéntame la ubicación, el tipo de obra y el plazo.</p>
+      </div>
+      <a class="btn btn--primary btn--xl btn--wide" href="mailto:consultas@ing-kevin.example">Solicitar cotización<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="nav__logo" href="#top"><span class="mark" data-mark="dots" aria-hidden="true"></span>Ing. Kevin</a>
+          <p class="footer__lede">Ingeniería civil: estructuras, supervisión y presupuestos.</p>
+        </div>
+        <div class="span-2 footer__col"><h4>Servicios</h4><ul><li><a href="#servicios">Estructuras</a></li><li><a href="#servicios">Supervisión</a></li></ul></div>
+        <div class="span-2 footer__col"><h4>Herramientas</h4><ul><li><a href="#herramientas">Calculadoras</a></li><li><a href="herramientas.html">Zapatas aisladas</a></li></ul></div>
+        <div class="span-2 footer__col"><h4>Ayuda</h4><ul><li><a href="#proceso">Proceso</a></li><li><a href="#preguntas">Preguntas</a></li></ul></div>
+        <div class="span-2 footer__col"><h4>Contacto</h4><ul><li><a href="mailto:consultas@ing-kevin.example">Escribir correo</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 Ing. Kevin</span>
+        <div class="socials"></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+<script type="module" src="assets/diagrams/mount.js"></script>
+</body>
+</html>

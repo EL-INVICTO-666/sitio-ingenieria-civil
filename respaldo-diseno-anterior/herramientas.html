@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suite de Herramientas & Calculadoras | Ing. Kevin</title>
+  <meta name="description" content="Calculadoras técnicas de ingeniería civil en vivo y plantillas descargables: predimensionamiento de vigas y columnas, dosificación de concreto y cálculo de pendientes.">
+  <meta name="keywords" content="Calculadoras Ingenieria Civil, Predimensionamiento Vigas, Columnas Concreto, Dosificacion Concreto fc 210, Pendiente Topografica, Plantillas Metrados">
+  
+  <!-- Tipografía Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =================================================================
+       BARRA DE NAVEGACIÓN
+       ================================================================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">IK</div>
+        <div>
+          <span>Ing. Kevin</span>
+          <span class="nav-tagline">Herramientas & Recursos de Ingeniería</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">← Inicio</a></li>
+          <li>
+            <a href="herramientas.html" class="nav-btn-tools active" title="Suite de Herramientas">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+              HERRAMIENTAS
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Selector Modo Oscuro/Claro -->
+        <button id="theme-toggle" class="theme-toggle" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+          <span id="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Botón Menú Móvil -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Abrir menú">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================================================
+       HERO DE LA SUITE DE HERRAMIENTAS
+       ================================================================= -->
+  <section class="section" style="padding: 4rem 0 3rem 0; text-align: center;">
+    <div class="container" style="max-width: 860px;">
+      <span class="section-tag">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+        Suite de Ingeniería Civil en Línea
+      </span>
+      <h1 class="section-title" style="font-size: 2.75rem; margin-top: 0.5rem;">
+        Herramientas Técnicas & Calculadoras en Vivo
+      </h1>
+      <p class="section-description" style="font-size: 1.15rem; margin: 0 auto 2rem auto;">
+        Cálculos instantáneos de predimensionamiento estructural y dosificación en obra para ingenieros civiles, supervisores y proyectistas. Basado en normativas técnicas vigentes (ACI 318, NTE E.060, MTC).
+      </p>
+
+      <!-- Selector de Tipo de Recurso -->
+      <div class="resources-tabs" style="margin-bottom: 0;">
+        <button class="tab-btn active" data-view="view-calculators">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01"></path>
+            <path d="M12 10h.01"></path>
+            <path d="M8 10h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M8 14h.01"></path>
+            <path d="M12 18h.01"></path>
+            <path d="M8 18h.01"></path>
+          </svg>
+          Calculadoras en Vivo
+        </button>
+        <button class="tab-btn" data-view="view-downloads">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Plantillas & Archivos Descargables
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       CONTENIDO PRINCIPAL DE HERRAMIENTAS
+       ================================================================= -->
+  <main class="container" style="padding-bottom: 5rem;">
+
+    <!-- ===============================================================
+         MÓDULO ESTRELLA: SOFTWARE DE DISEÑO DE ZAPATAS
+         =============================================================== -->
+    <section id="modulo-zapatas" style="margin-bottom: 4.5rem;">
+      <div style="margin-bottom: 1.5rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-tag" style="background-color: var(--accent-blue-light); color: var(--accent-blue);">
+              Módulo Geotécnico & Estructural
+            </span>
+            <h2 style="font-size: 2rem; font-weight: 800; color: var(--text-primary); margin-top: 0.35rem; letter-spacing: -0.02em;">
+              Programa: Dimensionamiento & Distribución de Aceros en Zapatas
+            </h2>
+            <p style="font-size: 1rem; color: var(--text-secondary); margin-top: 0.35rem; max-width: 820px;">
+              Cálculo automatizado de dimensiones en planta (B × L), peralte (hz), verificación por punzonamiento y cuantía/espaciamiento de varillas según ACI 318 y NTE E.060.
+            </p>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; background-color: var(--bg-surface); padding: 0.45rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); color: var(--text-muted); font-weight: 600;">
+            ACI 318 / E.060 / E.050
+          </span>
+        </div>
+      </div>
+
+      <div class="footing-suite-box">
+        <!-- Barra de selección de tipos de zapatas solicitada por el usuario -->
+        <div class="footing-selector-bar">
+          <button class="footing-tab-btn active" data-footing="isolated">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+            </svg>
+            Zapatas Aisladas
+            <span class="footing-badge badge-active">Activo</span>
+          </button>
+
+          <button class="footing-tab-btn" data-footing="connected">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="6" width="7" height="12" rx="1"></rect>
+              <rect x="15" y="6" width="7" height="12" rx="1"></rect>
+              <line x1="9" y1="12" x2="15" y2="12"></line>
+            </svg>
+            Zapatas Conectadas
+            <span class="footing-badge badge-upcoming">Próximamente</span>
+          </button>
+
+          <button class="footing-tab-btn" data-footing="combined">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+              <rect x="5" y="9" width="4" height="6"></rect>
+              <rect x="15" y="9" width="4" height="6"></rect>
+            </svg>
+            Zapatas Combinadas
+            <span class="footing-badge badge-upcoming">Próximamente</span>
+          </button>
+
+          <button class="footing-tab-btn" data-footing="strip">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+              <rect x="6" y="8" width="12" height="8" rx="1"></rect>
+            </svg>
+            Zapatas Corridas
+            <span class="footing-badge badge-upcoming">Próximamente</span>
+          </button>
+
+          <button class="footing-tab-btn" data-footing="mat">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="18" rx="2"></rect>
+              <circle cx="7" cy="8" r="1.5"></circle>
+              <circle cx="17" cy="8" r="1.5"></circle>
+              <circle cx="7" cy="16" r="1.5"></circle>
+              <circle cx="17" cy="16" r="1.5"></circle>
+            </svg>
+            Platea de Cimentación
+            <span class="footing-badge badge-upcoming">Próximamente</span>
+          </button>
+        </div>
+
+        <!-- 1. PANEL: ZAPATA AISLADA (ACTIVO) -->
+        <div id="panel-isolated" class="footing-panel active">
+          <div class="calc-grid">
+            <!-- Formulario de Entrada -->
+            <div class="calc-form">
+              <!-- Bloque 1: Geotecnia -->
+              <div class="footing-subheading">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M2 12h20"></path>
+                </svg>
+                1. Geotecnia del Terreno
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="iso-qa">
+                    Capacidad Portante (&sigma;t)
+                    <span class="form-hint">kg/cm²</span>
+                  </label>
+                  <input type="number" id="iso-qa" class="form-input" value="2.00" step="0.1" min="0.5" max="10">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="iso-df">
+                    Prof. Desplante (Df)
+                    <span class="form-hint">metros</span>
+                  </label>
+                  <input type="number" id="iso-df" class="form-input" value="1.50" step="0.1" min="0.5" max="6">
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="iso-gm">
+                    Peso Específico Suelo (&gamma;m)
+                    <span class="form-hint">ton/m³</span>
+                  </label>
+                  <input type="number" id="iso-gm" class="form-input" value="2.00" step="0.1" min="1.4" max="2.4">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="iso-sc">
+                    Sobrecarga de Piso (S/C)
+                    <span class="form-hint">ton/m²</span>
+                  </label>
+                  <input type="number" id="iso-sc" class="form-input" value="0.50" step="0.1" min="0" max="2">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="iso-hz">
+                  Espesor Mínimo de Zapata (hz mín)
+                  <span class="form-hint">cm</span>
+                </label>
+                <input type="number" id="iso-hz" class="form-input" value="30" step="5" min="30" max="200">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="iso-plan">
+                  Forma de la Zapata en Planta
+                  <span class="form-hint">Paso 3</span>
+                </label>
+                <select id="iso-plan" class="form-select">
+                  <option value="igual" selected>Volados iguales (L − B = t − b)</option>
+                  <option value="prop">Proporción de la columna (B/L = b/t)</option>
+                </select>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="iso-bman">
+                    B adoptado (opcional)
+                    <span class="form-hint">m, vacío = automático</span>
+                  </label>
+                  <input type="number" id="iso-bman" class="form-input" placeholder="auto" step="0.05" min="0.5">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="iso-lman">
+                    L adoptado (opcional)
+                    <span class="form-hint">m, vacío = automático</span>
+                  </label>
+                  <input type="number" id="iso-lman" class="form-input" placeholder="auto" step="0.05" min="0.5">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="iso-dman">
+                  Descuento hz − d adoptado (opcional)
+                  <span class="form-hint">cm, vacío = automático por capas</span>
+                </label>
+                <input type="number" id="iso-dman" class="form-input" placeholder="auto" step="0.5" min="5">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="iso-qm">
+                  Método de Presión Neta
+                  <span class="form-hint">Paso 2</span>
+                </label>
+                <select id="iso-qm" class="form-select">
+                  <option value="det" selected>Detallado (por capas: suelo + zapata)</option>
+                  <option value="prac">Práctico (&gamma; prom. 2.05 ton/m³)</option>
+                </select>
+              </div>
+
+              <!-- Bloque 2: Cargas de la Columna -->
+              <div class="footing-subheading">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 19V5M5 12l7-7 7 7"></path>
+                </svg>
+                2. Cargas Axiales de Servicio
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="iso-pd">
+                    Carga Muerta (PD)
+                    <span class="form-hint">Toneladas</span>
+                  </label>
+                  <input type="number" id="iso-pd" class="form-input" value="45.0" step="1" min="1">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="iso-pl">
+                    Carga Viva (PL)
+                    <span class="form-hint">Toneladas</span>
+                  </label>
+                  <input type="number" id="iso-pl" class="form-input" value="25.0" step="1" min="0">
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="iso-m">
+                    Momento Muerto (MD)
+                    <span class="form-hint">ton·m, en dirección B</span>
+                  </label>
+                  <input type="number" id="iso-m" class="form-input" value="0" step="0.5" min="0">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="iso-ml">
+                    Momento Vivo (ML)
+                    <span class="form-hint">ton·m, en dirección B</span>
+                  </label>
+                  <input type="number" id="iso-ml" class="form-input" value="0" step="0.5" min="0">
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="iso-pe">
+                    Axial por Sismo (PE)
+                    <span class="form-hint">Toneladas (±)</span>
+                  </label>
+                  <input type="number" id="iso-pe" class="form-input" value="0" step="1" min="0">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="iso-me">
+                  Momento por Sismo (ME)
+                  <span class="form-hint">ton·m, en dirección B</span>
+                </label>
+                <input type="number" id="iso-me" class="form-input" value="0" step="0.5" min="0">
+              </div>
+
+              <!-- Bloque 3: Geometría de Columna -->
+              <div class="footing-subheading">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                </svg>
+                3. Sección de la Columna
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="iso-cx">
+                    Lado Columna X (cx)
+                    <span class="form-hint">cm</span>
+                  </label>
+                  <input type="number" id="iso-cx" class="form-input" value="40" step="5" min="20" max="150">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="iso-cy">
+                    Lado Columna Y (cy)
+                    <span class="form-hint">cm</span>
+                  </label>
+                  <input type="number" id="iso-cy" class="form-input" value="40" step="5" min="20" max="150">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="iso-colbar">
+                  Varilla Longitudinal de la Columna
+                  <span class="form-hint">Define hz mínimo (gancho 90°)</span>
+                </label>
+                <select id="iso-colbar" class="form-select">
+                  <option value="1/2">Ø 1/2"</option>
+                  <option value="5/8" selected>Ø 5/8"</option>
+                  <option value="3/4">Ø 3/4"</option>
+                  <option value="1">Ø 1"</option>
+                </select>
+              </div>
+
+              <!-- Bloque 4: Materiales & Diámetro de Acero -->
+              <div class="footing-subheading">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                </svg>
+                4. Materiales & Armado
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="iso-fc">
+                    Concreto (f'c)
+                  </label>
+                  <select id="iso-fc" class="form-select">
+                    <option value="210" selected>f'c = 210 kg/cm²</option>
+                    <option value="280">f'c = 280 kg/cm²</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="iso-fy">
+                    Acero (fy)
+                  </label>
+                  <select id="iso-fy" class="form-select">
+                    <option value="4200" selected>fy = 4,200 kg/cm² (Grado 60)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="iso-bar">
+                  Diámetro de Varilla Deseado
+                  <span class="form-hint">Malla inferior</span>
+                </label>
+                <select id="iso-bar" class="form-select">
+                  <option value="1/2" selected>Ø 1/2" (1.29 cm² - Típico en viviendas/edificios)</option>
+                  <option value="5/8">Ø 5/8" (2.00 cm² - Edificaciones medianas)</option>
+                  <option value="3/4">Ø 3/4" (2.84 cm² - Cargas pesadas)</option>
+                  <option value="1">Ø 1" (5.10 cm² - Grandes zapatas)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="iso-bar-y">
+                  Varilla Dirección Y (L)
+                  <span class="form-hint">Malla inferior, capa superior</span>
+                </label>
+                <select id="iso-bar-y" class="form-select">
+                  <option value="same" selected>Igual que la dirección X</option>
+                  <option value="1/2">Ø 1/2"</option>
+                  <option value="5/8">Ø 5/8"</option>
+                  <option value="3/4">Ø 3/4"</option>
+                  <option value="1">Ø 1"</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Panel de Resultados & Croquis SVG -->
+            <div class="calc-results" style="padding: 1.75rem;">
+              <div>
+                <div class="results-header" style="display:flex; justify-content:space-between; align-items:center;">
+                  <span>Dimensiones Finales</span>
+                  <span style="font-size:0.75rem; color:var(--accent-blue);">ACI 318 / E.060</span>
+                </div>
+
+                <div class="result-main" style="padding: 0.5rem 0 1rem 0;">
+                  <div class="result-number" id="res-footing-dims" style="font-size: 2.1rem;">
+                    2.20 m × 2.20 m
+                  </div>
+                  <div class="result-unit">
+                    Sección en Planta (B × L)
+                  </div>
+                </div>
+
+                <div class="result-breakdown" style="gap: 0.75rem;">
+                  <div class="breakdown-row">
+                    <span>Peralte y Altura Total (hz):</span>
+                    <span id="res-footing-hz" style="color: var(--accent-blue);">55 cm (d = 46.5 cm)</span>
+                  </div>
+
+                  <div class="breakdown-row">
+                    <span>Malla de Acero Dir. X (B):</span>
+                    <span id="res-footing-steel-x">12 Ø 1/2" @ 18 cm</span>
+                  </div>
+
+                  <div class="breakdown-row">
+                    <span>Malla de Acero Dir. Y (L):</span>
+                    <span id="res-footing-steel-y">12 Ø 1/2" @ 18 cm</span>
+                  </div>
+
+                  <div class="breakdown-row">
+                    <span>Presión Actuante en Suelo:</span>
+                    <span id="res-footing-pressure">1.45 kg/cm² ✓ Conforme</span>
+                  </div>
+
+                  <div class="breakdown-row">
+                    <span>Cortante Unidireccional:</span>
+                    <span id="res-footing-shear">✓ Conforme</span>
+                  </div>
+
+                  <div class="breakdown-row">
+                    <span>Verificación Punzonamiento:</span>
+                    <span id="res-footing-punch">✓ Conforme</span>
+                  </div>
+
+                  <div class="breakdown-row">
+                    <span>Anclaje del Acero:</span>
+                    <span id="res-footing-dev">✓ Conforme</span>
+                  </div>
+
+                  <div class="breakdown-row">
+                    <span>Aplastamiento Columna-Zapata:</span>
+                    <span id="res-footing-bearing">✓ Conforme</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Croquis Técnico SVG Generado en Vivo -->
+              <div class="blueprint-card">
+                <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem; width: 100%; display:flex; justify-content:space-between;">
+                  <span>Croquis de Distribución en Planta</span>
+                  <span style="color:var(--accent-blue);">En Vivo</span>
+                </div>
+                <div id="footing-blueprint-svg" style="width: 100%; max-width: 380px; height: 280px;"></div>
+              </div>
+
+              <!-- Memoria de cálculo en LaTeX -->
+              <div class="footing-export">
+                <button type="button" class="btn btn-primary btn-sm" id="footingPdfBtn">Ver memoria PDF (LaTeX)</button>
+                <button type="button" class="btn btn-outline btn-sm" id="footingSummaryBtn">Tabla resumen</button>
+                <button type="button" class="btn btn-outline btn-sm" id="footingTexBtn">Descargar .tex</button>
+                <span class="footing-export-note">El PDF se compila en texlive.net (requiere internet).</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. PANEL: ZAPATAS CONECTADAS (PRÓXIMAMENTE) -->
+        <div id="panel-connected" class="footing-panel">
+          <div class="upcoming-container">
+            <div class="upcoming-icon">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="6" width="7" height="12" rx="1"></rect>
+                <rect x="15" y="6" width="7" height="12" rx="1"></rect>
+                <line x1="9" y1="12" x2="15" y2="12"></line>
+              </svg>
+            </div>
+            <span class="footing-badge badge-upcoming" style="margin-bottom: 0.75rem; display:inline-block;">En Fase de Desarrollo</span>
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">
+              Programa de Zapatas Conectadas
+            </h3>
+            <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Este módulo calculará la zapata exterior (límite de propiedad con momento de volteo) enlazada a una zapata interior mediante <strong>viga de cimentación rígida</strong>, calculando la reacción amplificada, cortantes de diseño y armadura superior e inferior de la viga.
+            </p>
+            <button class="btn btn-outline footing-tab-btn" data-footing="isolated" style="border: 1px solid var(--border-medium);">
+              ← Volver al Módulo de Zapatas Aisladas
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. PANEL: ZAPATAS COMBINADAS (PRÓXIMAMENTE) -->
+        <div id="panel-combined" class="footing-panel">
+          <div class="upcoming-container">
+            <div class="upcoming-icon">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <rect x="5" y="9" width="4" height="6"></rect>
+                <rect x="15" y="9" width="4" height="6"></rect>
+              </svg>
+            </div>
+            <span class="footing-badge badge-upcoming" style="margin-bottom: 0.75rem; display:inline-block;">En Fase de Desarrollo</span>
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">
+              Programa de Zapatas Combinadas
+            </h3>
+            <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Diseñado para soportar 2 o más columnas cuando las zapatas aisladas se traslapan. Resolverá la resultante de cargas para igualar el centro de gravedad con el centroide del terreno, calculando los momentos flectores longitudinales y transversales.
+            </p>
+            <button class="btn btn-outline footing-tab-btn" data-footing="isolated" style="border: 1px solid var(--border-medium);">
+              ← Volver al Módulo de Zapatas Aisladas
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. PANEL: ZAPATAS CORRIDAS (PRÓXIMAMENTE) -->
+        <div id="panel-strip" class="footing-panel">
+          <div class="upcoming-container">
+            <div class="upcoming-icon">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+                <rect x="6" y="8" width="12" height="8" rx="1"></rect>
+              </svg>
+            </div>
+            <span class="footing-badge badge-upcoming" style="margin-bottom: 0.75rem; display:inline-block;">En Fase de Desarrollo</span>
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">
+              Programa de Zapatas Corridas
+            </h3>
+            <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Módulo para muros de contención, muros de sótano y albañilería confinada. Cálculo por metro lineal de ancho de zapata, verificación de presiones admisibles y cuantía mínima de acero longitudinal y transversal.
+            </p>
+            <button class="btn btn-outline footing-tab-btn" data-footing="isolated" style="border: 1px solid var(--border-medium);">
+              ← Volver al Módulo de Zapatas Aisladas
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. PANEL: PLATEA DE CIMENTACIÓN (PRÓXIMAMENTE) -->
+        <div id="panel-mat" class="footing-panel">
+          <div class="upcoming-container">
+            <div class="upcoming-icon">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="18" rx="2"></rect>
+                <circle cx="7" cy="8" r="1.5"></circle>
+                <circle cx="17" cy="8" r="1.5"></circle>
+                <circle cx="7" cy="16" r="1.5"></circle>
+                <circle cx="17" cy="16" r="1.5"></circle>
+              </svg>
+            </div>
+            <span class="footing-badge badge-upcoming" style="margin-bottom: 0.75rem; display:inline-block;">En Fase de Desarrollo</span>
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">
+              Programa de Platea / Losa de Cimentación
+            </h3>
+            <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Módulo integral para suelos de baja capacidad portante. Evaluación de rigidez, coeficiente de balasto (módulo de reacción de Winkler ks), verificación contra punzonamiento masivo y doble malla de acero corrugado.
+            </p>
+            <button class="btn btn-outline footing-tab-btn" data-footing="isolated" style="border: 1px solid var(--border-medium);">
+              ← Volver al Módulo de Zapatas Aisladas
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         OTRAS HERRAMIENTAS Y CALCULADORAS RÁPIDAS
+         =============================================================== -->
+    <div style="margin-bottom: 1.5rem; text-align: center;">
+      <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary);">
+        Calculadoras Rápidas de Apoyo
+      </h3>
+      <p style="font-size: 0.92rem; color: var(--text-secondary);">
+        Herramientas complementarias para predimensionamiento de elementos y verificación de obra.
+      </p>
+    </div>
+
+    <!-- VISTA 1: CALCULADORAS INTERACTIVAS -->
+    <div id="view-calculators" class="resource-view active">
+      <div class="calculator-box">
+        <!-- Pestañas internas de calculadoras -->
+        <div class="calc-selector" style="flex-wrap: wrap;">
+          <button class="calc-nav-btn active" data-target="calc-beam">
+            1. Vigas de Concreto
+          </button>
+          <button class="calc-nav-btn" data-target="calc-column">
+            2. Columnas Estructurales
+          </button>
+          <button class="calc-nav-btn" data-target="calc-concrete">
+            3. Dosificación de Concreto
+          </button>
+          <button class="calc-nav-btn" data-target="calc-slope">
+            4. Pendientes & Desniveles
+          </button>
+        </div>
+
+        <div class="calc-body">
+          <!-- 1. VIGAS -->
+          <div id="calc-beam" class="calc-panel active">
+            <div class="calc-grid">
+              <div class="calc-form">
+                <div class="form-group">
+                  <label class="form-label" for="beam-length">
+                    Luz Libre del Tramo (L)
+                    <span class="form-hint">En metros (m)</span>
+                  </label>
+                  <input type="number" id="beam-length" class="form-input" value="5.5" step="0.1" min="1" max="25">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="beam-type">
+                    Tipo de Carga / Uso de la Estructura
+                  </label>
+                  <select id="beam-type" class="form-select">
+                    <option value="12" selected>Vivienda / Oficinas (h ≈ L / 12)</option>
+                    <option value="10">Comercial / Carga Pesada (h ≈ L / 10)</option>
+                    <option value="14">Viga Secundaria / Poca Carga (h ≈ L / 14)</option>
+                    <option value="5">Voladizo / Cantilever (h ≈ L / 5)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="beam-width">
+                    Ancho Propuesto de Viga (b)
+                    <span class="form-hint">Mínimo 25 cm para zona sísmica</span>
+                  </label>
+                  <input type="number" id="beam-width" class="form-input" value="30" step="5" min="20" max="100">
+                </div>
+              </div>
+
+              <div class="calc-results">
+                <div>
+                  <div class="results-header">Dimensiones Sugeridas</div>
+                  <div class="result-main">
+                    <div class="result-number" id="res-beam-h">50 cm</div>
+                    <div class="result-unit">Peralte total recomendado (h)</div>
+                  </div>
+
+                  <div class="result-breakdown">
+                    <div class="breakdown-row">
+                      <span>Base de la viga (b):</span>
+                      <span id="res-beam-b">30 cm</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Peralte efectivo aprox. (d):</span>
+                      <span id="res-beam-d">45 cm</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Rango sugerido para base:</span>
+                      <span id="res-beam-suggested-b">25 a 30 cm</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Relación de aspecto (b:h):</span>
+                      <span id="res-beam-ratio">1 : 1.67</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="calc-disclaimer">
+                  * Criterio normativo según ACI 318 / NTE E.060 para control de deflexión por flexión. Todo proyecto final requiere cálculo formal por sismo y cortante.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. COLUMNAS -->
+          <div id="calc-column" class="calc-panel">
+            <div class="calc-grid">
+              <div class="calc-form">
+                <div class="form-group">
+                  <label class="form-label" for="col-at">
+                    Área Tributaria (At)
+                    <span class="form-hint">En metros cuadrados (m²)</span>
+                  </label>
+                  <input type="number" id="col-at" class="form-input" value="25" step="1" min="1" max="200">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="col-floors">
+                    Número de Pisos / Niveles (N)
+                  </label>
+                  <input type="number" id="col-floors" class="form-input" value="4" step="1" min="1" max="30">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="col-type">
+                    Ubicación de la Columna
+                  </label>
+                  <select id="col-type" class="form-select">
+                    <option value="center" selected>Columna Central (Mayor carga axial, n = 0.30)</option>
+                    <option value="edge">Columna Perimetral / Lateral (n = 0.25)</option>
+                    <option value="corner">Columna de Esquina (Excentricidad biaxial, n = 0.20)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="col-usage">
+                    Carga Unitaria Estimada (q)
+                  </label>
+                  <select id="col-usage" class="form-select">
+                    <option value="1000" selected>Vivienda / Oficinas (q ≈ 1,000 kg/m²)</option>
+                    <option value="1250">Comercial / Educativo (q ≈ 1,250 kg/m²)</option>
+                    <option value="1500">Depósito / Carga Pesada (q ≈ 1,500 kg/m²)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="col-fc">
+                    Resistencia del Concreto (f'c)
+                  </label>
+                  <select id="col-fc" class="form-select">
+                    <option value="210" selected>f'c = 210 kg/cm² (Estándar)</option>
+                    <option value="280">f'c = 280 kg/cm² (Alta Resistencia)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="calc-results">
+                <div>
+                  <div class="results-header">Sección Preliminar Requerida</div>
+                  <div class="result-main">
+                    <div class="result-number" id="res-col-section">45 x 45 cm</div>
+                    <div class="result-unit">Sección Cuadrada Sugerida</div>
+                  </div>
+
+                  <div class="result-breakdown">
+                    <div class="breakdown-row">
+                      <span>Carga Axial de Servicio (P):</span>
+                      <span id="res-col-p">110.0 Toneladas</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Área de concreto mín. (Ac):</span>
+                      <span id="res-col-ac">1746 cm²</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Sección rectangular alt.:</span>
+                      <span id="res-col-rect">30 x 60 cm</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Criterio de ubicación:</span>
+                      <span id="res-col-type">Central (n=0.30)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="calc-disclaimer">
+                  * Fórmula normada: Ac = P_servicio / (n · f'c). Para zona de alta sismicidad, la sección mínima recomendada por norma es de 30x30 cm o área mínima de 1,000 cm².
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. DOSIFICACIÓN DE CONCRETO -->
+          <div id="calc-concrete" class="calc-panel">
+            <div class="calc-grid">
+              <div class="calc-form">
+                <div class="form-group">
+                  <label class="form-label" for="concrete-fc">
+                    Resistencia a la Compresión (f'c)
+                  </label>
+                  <select id="concrete-fc" class="form-select">
+                    <option value="140">140 kg/cm² (Solados, veredas, falsos pisos)</option>
+                    <option value="175">175 kg/cm² (Cimientos corridos, sobrecimientos)</option>
+                    <option value="210" selected>210 kg/cm² (Vigas, columnas, losas estándar)</option>
+                    <option value="280">280 kg/cm² (Estructuras de alta resistencia / puentes)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="concrete-vol">
+                    Volumen a Vaciar
+                    <span class="form-hint">En metros cúbicos (m³)</span>
+                  </label>
+                  <input type="number" id="concrete-vol" class="form-input" value="1.0" step="0.5" min="0.1">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="concrete-waste">
+                    Desperdicio Estimado en Obra (%)
+                  </label>
+                  <input type="number" id="concrete-waste" class="form-input" value="5" step="1" min="0" max="25">
+                </div>
+              </div>
+
+              <div class="calc-results">
+                <div>
+                  <div class="results-header">Materiales Requeridos</div>
+                  <div class="result-main">
+                    <div class="result-number" id="res-concrete-bags">11 bolsas</div>
+                    <div class="result-unit">Cemento Tipo I (42.5 kg)</div>
+                  </div>
+
+                  <div class="result-breakdown">
+                    <div class="breakdown-row">
+                      <span>Arena Gruesa:</span>
+                      <span id="res-concrete-sand">0.55 m³</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Piedra Chancada 1/2":</span>
+                      <span id="res-concrete-gravel">0.56 m³</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Agua estimada:</span>
+                      <span id="res-concrete-water">195 L</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Proporción volumétrica típica:</span>
+                      <span id="res-concrete-ratio">1 : 2 : 2</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="calc-disclaimer">
+                  * Dosificación estándar en volumen. Puede variar ligeramente según el contenido de humedad y módulo de finura de los agregados de tu cantera.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. PENDIENTES TOPOGRÁFICAS -->
+          <div id="calc-slope" class="calc-panel">
+            <div class="calc-grid">
+              <div class="calc-form">
+                <div class="form-group">
+                  <label class="form-label" for="slope-dist">
+                    Distancia Horizontal (D)
+                    <span class="form-hint">En metros (m)</span>
+                  </label>
+                  <input type="number" id="slope-dist" class="form-input" value="100" step="1" min="1">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="slope-z1">
+                    Cota de Inicio (Z1)
+                    <span class="form-hint">En m.s.n.m. o cota relativa</span>
+                  </label>
+                  <input type="number" id="slope-z1" class="form-input" value="100.00" step="0.1">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="slope-z2">
+                    Cota Final (Z2)
+                    <span class="form-hint">En m.s.n.m.</span>
+                  </label>
+                  <input type="number" id="slope-z2" class="form-input" value="104.50" step="0.1">
+                </div>
+              </div>
+
+              <div class="calc-results">
+                <div>
+                  <div class="results-header">Resultados Geométricos</div>
+                  <div class="result-main">
+                    <div class="result-number" id="res-slope-percent">4.50%</div>
+                    <div class="result-unit">Pendiente Longitudinal</div>
+                  </div>
+
+                  <div class="result-breakdown">
+                    <div class="breakdown-row">
+                      <span>Desnivel vertical (&Delta;h):</span>
+                      <span id="res-slope-delta">+4.50 m</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Relación de pendiente (H:V):</span>
+                      <span id="res-slope-ratio">1 : 22.2</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Ángulo de inclinación:</span>
+                      <span id="res-slope-angle">2.58°</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Evaluación técnica:</span>
+                      <span id="res-slope-diag" style="color: var(--accent-blue); text-align: right;">Pendiente moderada</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="calc-disclaimer">
+                  * Verifica los rangos normativos del Manual de Carreteras DG y normas de drenaje sanitario (velocidades mínimas de arrastre 0.6 m/s).
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISTA 2: PLANTILLAS Y GUÍAS DESCARGABLES -->
+    <div id="view-downloads" class="resource-view">
+      <div class="downloads-grid">
+        <!-- Recurso 1 -->
+        <div class="download-card">
+          <div class="download-top">
+            <span class="file-type-badge badge-excel">EXCEL .XLSX</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+          </div>
+          <h3 class="download-title">Plantilla de Metrados de Concreto, Encofrado y Acero</h3>
+          <p class="download-desc">
+            Hoja formulada para metrar zapatas, columnas, vigas y losas aligeradas. Incluye resumen automático de pesos de acero por diámetro comercial (3/8", 1/2", 5/8", 3/4").
+          </p>
+          <div class="download-meta">
+            <span>Formato: XLSX</span>
+            <a href="index.html#contacto" class="btn btn-outline btn-sm">Solicitar Archivo</a>
+          </div>
+        </div>
+
+        <!-- Recurso 2 -->
+        <div class="download-card">
+          <div class="download-top">
+            <span class="file-type-badge badge-excel">EXCEL .XLSX</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+          </div>
+          <h3 class="download-title">Formato de Control Diario de Cuaderno de Obra</h3>
+          <p class="download-desc">
+            Plantilla estructurada para el registro diario de actividades en campo, control de personal, maquinaria operativa/inoperativa, condiciones climáticas y ocurrencias técnicas.
+          </p>
+          <div class="download-meta">
+            <span>Formato: XLSX</span>
+            <a href="index.html#contacto" class="btn btn-outline btn-sm">Solicitar Archivo</a>
+          </div>
+        </div>
+
+        <!-- Recurso 3 -->
+        <div class="download-card">
+          <div class="download-top">
+            <span class="file-type-badge badge-pdf">PDF TÉCNICO</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+          </div>
+          <h3 class="download-title">Checklist de Supervisión en Vaciado de Concreto</h3>
+          <p class="download-desc">
+            Lista de verificación paso a paso previa, durante y posterior al vaciado: verificación de recubrimientos, limpieza de encofrados, vibrado correcto y curado del elemento.
+          </p>
+          <div class="download-meta">
+            <span>Formato: PDF Imprimible</span>
+            <a href="index.html#contacto" class="btn btn-outline btn-sm">Solicitar Archivo</a>
+          </div>
+        </div>
+
+        <!-- Recurso 4 -->
+        <div class="download-card">
+          <div class="download-top">
+            <span class="file-type-badge badge-cad">AUTOCAD .DWG</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg>
+          </div>
+          <h3 class="download-title">Librería de Detalles Típicos Sismorresistentes</h3>
+          <p class="download-desc">
+            Bloques en AutoCAD con detalles normativos de empalmes en vigas y columnas, distribución de estribos confinados, zunchos y anclajes en nudos viga-columna.
+          </p>
+          <div class="download-meta">
+            <span>AutoCAD 2018+</span>
+            <a href="index.html#contacto" class="btn btn-outline btn-sm">Solicitar Archivo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TARJETA DE LLAMADO A LA ACCIÓN / CONTACTO -->
+    <div style="margin-top: 4rem; padding: 2.5rem; background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow-sm);">
+      <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+        ¿Necesitas una asesoría técnica o cálculo estructural específico?
+      </h3>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 1.5rem auto; font-size: 0.95rem;">
+        Desarrollo memorias de cálculo, expedientes técnicos, modelado BIM y supervisión de obras con total rigor normativo.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="index.html#contacto" class="btn btn-primary">
+          Contactar con Ing. Kevin
+        </a>
+        <a href="index.html" class="btn btn-outline">
+          Ver Portafolio & CV Completo
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+       ================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <p><strong>Ing. Kevin</strong> — Suite de Herramientas de Ingeniería Civil</p>
+        <p style="font-size: 0.8rem; margin-top: 0.25rem;">
+          Recursos interactivos desarrollados para optimizar el trabajo técnico y de campo.
+        </p>
+      </div>
+
+      <div>
+        <a href="index.html" style="color: var(--accent-blue); font-weight: 500;">← Volver al Inicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Tabla resumen de la zapata aislada -->
+  <div class="footing-pdf-back" id="footingSummaryBack">
+    <div class="footing-pdf-panel footing-summary-panel" id="footingSummaryPanel">
+      <div class="footing-pdf-bar">
+        <strong>Tabla resumen · Zapata aislada</strong>
+        <span style="flex:1"></span>
+        <button type="button" class="btn btn-outline btn-sm" id="footingSummaryCopy">Copiar</button>
+        <button type="button" class="btn btn-outline btn-sm" id="footingSummaryPrint">Imprimir / PDF</button>
+        <button type="button" class="btn btn-primary btn-sm" id="footingSummaryClose">✕ Cerrar</button>
+      </div>
+      <div class="footing-summary-body" id="footingSummaryBody"></div>
+    </div>
+  </div>
+
+  <!-- Visor del PDF de la memoria de cálculo (zapata aislada) -->
+  <div class="footing-pdf-back" id="footingPdfBack">
+    <div class="footing-pdf-panel">
+      <div class="footing-pdf-bar">
+        <strong>Memoria de cálculo · Zapata aislada</strong>
+        <span class="footing-export-note">compilado con pdfLaTeX en texlive.net</span>
+        <span style="flex:1"></span>
+        <button type="button" class="btn btn-outline btn-sm" id="footingPdfReload">↻ Recompilar</button>
+        <button type="button" class="btn btn-outline btn-sm" id="footingPdfNewTab">↗ Pestaña</button>
+        <button type="button" class="btn btn-primary btn-sm" id="footingPdfClose">✕ Cerrar</button>
+      </div>
+      <div class="footing-pdf-body">
+        <iframe name="footingPdfFrame" id="footingPdfFrame" title="Memoria de cálculo en PDF"></iframe>
+        <div class="footing-pdf-status" id="footingPdfStatus">Compilando en texlive.net…</div>
+      </div>
+    </div>
+  </div>
+
+  <form id="footingTexliveForm" action="https://texlive.net/cgi-bin/latexcgi" method="post" enctype="multipart/form-data" target="footingPdfFrame" rel="noopener noreferrer" style="display:none">
+    <input type="hidden" name="filename[]" value="document.tex">
+    <textarea name="filecontents[]" id="footingTexliveSrc"></textarea>
+    <input type="hidden" name="engine" value="pdflatex">
+    <input type="hidden" name="return" id="footingTexliveReturn" value="pdfjs">
+  </form>
+
+  <script src="js/calculators.js"></script>
+  <script src="js/footings.js"></script>
+  <script src="js/footings-latex.js"></script>
+  <script src="js/footings-summary.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

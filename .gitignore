@@ -1,0 +1,7 @@
+# Generado por la skill de diseño (capturas e informes de las revisiones)
+.taste-skill/consistency/
+# Configuración local del entorno de desarrollo
+.claude/
+node_modules/
+*.log
+Thumbs.db
